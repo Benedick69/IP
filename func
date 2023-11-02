@@ -1,0 +1,86 @@
+<script>
+function fun1()
+{
+var a=20;
+var b=30;
+console.log(`1.This is normal function ,addition is ${(a+b)}`);
+}
+fun1();
+function fun2()
+{
+var a=50;
+var b=80;
+return a*b;
+}
+console.log(`2.function with return,multiplication is ${fun2()}`);
+function fun3(c,d)
+{
+return c-d;
+}
+console.log(`3.Parameterised function with return , subtraction is ${fun3(82,50)}`);
+function fun4(e,f)
+{
+console.log(`4.This is parameterised function without return , addition is :${(e+f)}`);
+
+
+
+
+}
+fun4(20,80);
+var fun5 = function ()
+{
+var a=10;
+var b=30;
+console.log(`5.This is normal function addition is ${(a+b)}`);
+}
+fun5();
+let fun6=function ()
+{
+let a=15;
+b=5;
+return a*b;
+}
+console.log(`6.function with return,multiplication is ${fun6()}`);
+var fun7= function (c,d)
+{
+return c-d;
+}
+console.log(`7.Parameterised function with return , subtraction is ${fun7(300,50)}`);
+let fun8=function (e,f)
+{
+console.log(`8.This is parameterised function without return , addition is :${(e+f)}`);
+
+
+
+
+}
+fun8(55,85);
+fun9=()=>
+{
+var a=40;
+var b=80;
+console.log(`9.This is normal function addition is ${(a+b)}`);
+}
+fun9();
+fun10=()=>
+{
+var a=10;
+var b=60;
+return a*b;
+}
+console.log(`10.function with return,multiplication is ${fun10()}`);
+fun11=(c,d)=>
+{
+return c-d;
+}
+console.log(`11.Parameterised function with return , subtraction is ${fun11(100,50)}`);
+fun12=(e,f)=>
+{
+console.log(`12.This is parameterised function without return , addition is :${(e+f)}`);
+
+
+
+
+}
+fun12(20,60);
+</script>
