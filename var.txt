@@ -1,0 +1,25 @@
+//variable
+
+<script>
+    console.log("nishant Rathod","51");
+    var a=10;
+    var b=20
+    console.log("the Redeclared value of var is",a);
+
+    var b=5;
+    b=8;
+    c=9;
+    console.log("the updated value of var is ",b)
+    console.log("the addition of var is ",(b+c));
+    let x=15
+    x=12;
+    c=18
+    console.log("the updated value is",x)
+    console.log("the substraction of let is",(x-c))
+    const p=2;
+    p=25
+    c=8
+    console.log("the updated value of const is ",p)
+    console.log("the multiplication of const is",(p*c));
+
+</script>
