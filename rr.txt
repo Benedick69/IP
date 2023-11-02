@@ -1,0 +1,71 @@
+//index.js
+import React from "react";
+import ReactDOM from "react-dom";
+import Name from "./Name";
+import RollNo from "./RollNo";
+import PRNNo from "./PRNNo"; // Corrected the import statement
+import { BrowserRouter , Link, Route, Switch } from 'react-router-dom'; // Corrected the import statement
+class Nav extends React.Component {
+ render() {
+ return (
+ <BrowserRouter>
+ <ul>
+ <li><Link to='/'>Name</Link></li>
+ <li><Link to='/RollNo'>Roll No</Link></li> {/* Corrected the route path */}
+ <li><Link to='/PRNNo'>PRN No</Link></li> {/* Corrected the route path */}
+ </ul>
+ <Routes>
+ <Route path='/' exact component={Name} />
+ <Route path='/RollNo' component={RollNo} />
+ <Route path='/PRNNo' component={PRNNo} />
+ </Routes>
+ </BrowserRouter>
+ );
+ }
+}
+ReactDOM.render(<Nav />, document.getElementById("root"));
+
+
+
+
+//Name.js
+import React from 'react';
+export default class Name extends React.Component {
+ render() {
+ return (
+ <div>
+ <h1>Rahul santra</h1>
+ </div>
+ );
+ }
+}
+
+
+
+
+//RollNo.js
+import React from 'react';
+export default class RollNo extends React.Component {
+ render() {
+ return (
+ <div>
+ <h1>My Roll No is 53</h1>
+ </div>
+ );
+ }
+}
+
+
+
+//PRNNo.js
+import React from 'react';
+export default class PRNNo extends React.Component {
+ render() {
+ return (
+ <div>
+ <h1>My PRN No is 211051009</h1>
+ </div>
+ );
+
+}
+}
