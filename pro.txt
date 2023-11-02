@@ -1,0 +1,27 @@
+//promise
+    <script>
+        // Create a Promise that uses 'a' and 'b'
+        const promise = new Promise((resolve, reject) => {
+            const a = 20;
+            const b = 3;
+            setTimeout(() => {
+                // Simulate an asynchronous operation
+                const success = true;
+                if (success) {
+                    resolve(a + b);
+                } else {
+                    reject("Promise rejected");
+                }
+            }, 1000);
+        });
+
+        // Handle the promise using .then() and .catch()
+        promise
+            .then(result => {
+                console.log("Success: " + result);
+            })
+            .catch(error => {
+                console.log("Error: " + error);
+            });
+    </script>
+
