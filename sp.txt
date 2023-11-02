@@ -10,3 +10,21 @@ document.getElementById("root")
 
 
 //state.js
+import React from "react";
+
+export default class State extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            name : "Aditya",
+            car: this.props.carname,
+        };
+    }
+    render() {
+        return (
+            <>
+            <h1>my name is{this.state.name} and i have {this.state.car}</h1>
+            </>
+        );
+    }
+}
